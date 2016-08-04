@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mathmagician
 {
-    public class Even: Integer
+    public class Even : Integer
     {
         //methods we need to have available for testing
         public int Modulo(int divisor)
@@ -17,8 +17,9 @@ namespace Mathmagician
         {
             Even numE = new Even()
             {
+            };
+        }
+        public int value { get; set; }
 
-            }
-            public int value { get; set; }
     }
 }

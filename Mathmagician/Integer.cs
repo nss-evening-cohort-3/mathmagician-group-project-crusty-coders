@@ -8,6 +8,10 @@ namespace Mathmagician
 {
     public class Integer
     {
+        public Integer()
+        {
+        }
+
         public Integer(string userInput)
         //this is a constructor
         {
@@ -18,29 +22,44 @@ namespace Mathmagician
             {
                 if (i > 0)
                 { //initialize integer object here
-
+                    Integer IntegerUserInput = new Integer();
                 }
                 else
                 {
-                    //alert you didn't give me a positive number
+                    throw new Exception();
                 }
             }
             else
-
-            //you didn't give me an integer
             {
-            }
+                //you didn't give me an integer
+                throw new ArgumentException();
+            };
         }
-        //operations here, add, subtract, multiply, divide, modulo
+        //operations here, add, subtract, multiply, modulo
+        public int Multiply(int firstNumber, int secondNumber)
+        {
+            var answerMulty = firstNumber * secondNumber;
+            return answerMulty;
 
+            // private List<int> answer = new List<int>();
 
-        // {
-        // if any key on the keyboard other than a number 
-        //is pressed, (i.e. letter, symbol, space bar, etc.)
-        //throw an exception and make user
-        //re-enter
-        //some kind of
-        //  }
+        }
+        public int AddTwo(int firstNumber)
+        {
+            var answerAddTwo = firstNumber + 2;
+            return answerAddTwo;
 
+            // private List<int> answer = new List<int>();
+        }
+        public int SubtractOne(int x)
+        {
+            var answerSO = (x - 1);
+            return answerSO; 
+        }
+        public int ModuloTwo(int y)
+        {
+            var answerModTwo = (y % 2);
+            return answerModTwo;
+        }
     }
 }
