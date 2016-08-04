@@ -9,7 +9,7 @@ namespace Mathmagician
     public class Integer
     {
         public Integer(string userInput)
-            //this is a constructor
+        //this is a constructor
         {
             int i;
             //int.TryParse returns a boolean
@@ -24,21 +24,23 @@ namespace Mathmagician
                 {
                     //alert you didn't give me a positive number
                 }
-            }else
+            }
+            else
 
-                //you didn't give me an integer
+            //you didn't give me an integer
             {
-            }   
+            }
         }
-       //operations here, add, subtract, multiply, divide, modulo
-     
-       
-       // {
-            // if any key on the keyboard other than a number 
-            //is pressed, (i.e. letter, symbol, space bar, etc.)
-                //throw an exception and make user
-                //re-enter
-            //some kind of
-      //  }
-        
+        //operations here, add, subtract, multiply, divide, modulo
+
+
+        // {
+        // if any key on the keyboard other than a number 
+        //is pressed, (i.e. letter, symbol, space bar, etc.)
+        //throw an exception and make user
+        //re-enter
+        //some kind of
+        //  }
+
+    }
 }
