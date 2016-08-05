@@ -25,5 +25,9 @@ namespace Mathmagician.Tests
         {
             Assert.Equals( i, userInput);
         }
+        public void IntegerMultiplyWorks()
+        {
+           // Assert.Equals //(userInput.Multiply, int answerMulty);
+        }
     }
 }

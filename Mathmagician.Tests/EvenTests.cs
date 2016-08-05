@@ -17,14 +17,15 @@ namespace Mathmagician.Tests
             //Assert
             Assert.IsNotNull(my_even);
         }
-            //Act
+        //Act
 
-            Even my_even = new Even(); //new instance of even
+        Even my_even = new Even(); //new instance of even
 
-            //Assert
+        //Assert
 
-            //instance of even must be true
-            Assert.True
-        
-    
+        //instance of even must be true
+       // Assert.True
+
+
+    }
 }
