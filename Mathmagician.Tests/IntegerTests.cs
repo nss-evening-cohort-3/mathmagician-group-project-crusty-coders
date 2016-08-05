@@ -23,11 +23,21 @@ namespace Mathmagician.Tests
         [TestMethod]
         public void IntegerEnsureUserInputIsAnInteger()
         {
-            Assert.Equals( i, userInput);
+            Assert.AreEqual( i, userInput);
         }
+        [TestMethod]
         public void IntegerMultiplyWorks()
         {
-           // Assert.Equals //(userInput.Multiply, int answerMulty);
+            Integer Multiply = new Integer();
+            int answerMulty = Multiply.Multiply(6, 7);
+            Assert.AreEqual( (42), answerMulty );
         }
+        public void IntegerAddTwo()
+        {
+            Integer AddTwo = new Integer();
+            int answerAddTwo = AddTwo.AddTwo(3);
+            Assert.AreEqual((5), answerAddTwo );
+        }
+
     }
 }
