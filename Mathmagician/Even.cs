@@ -20,6 +20,6 @@ namespace Mathmagician
             };
         }
         public int value { get; set; }
-
     }
 }
+  

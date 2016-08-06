@@ -60,6 +60,10 @@ namespace Mathmagician
             var answerModTwo = (y % 2);
             return answerModTwo;
         }
-
+        public void ListIntegers()
+        {
+            //create a list with nothing in it
+            List<int> ListIntegers = new List<int> { 0 };
+        }
     }
 }
