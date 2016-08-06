@@ -48,9 +48,10 @@ namespace Mathmagician.Tests
         [TestMethod]
         public void TestGeneratingList()
         {
-            Integer TestList = new Integer();
+            Integer TestList = new Integer();    
             List<int> List1 = new List<int>() {1, 2, 3, 4};
-            CollectionAssert.AreEqual(List1, IntegerList{4});       
+            CollectionAssert.AreEqual(List1, TestList.IntegerList);       
         }
+        //ck to see if nothing is null in list    
     }
 }

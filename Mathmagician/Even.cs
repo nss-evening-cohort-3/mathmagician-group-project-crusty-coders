@@ -8,11 +8,15 @@ namespace Mathmagician
 {
     public class Even : Integer
     {
+
         public Even() : base()
         {
             //we want to create a collection of Even Integers
             IntegerList.Add(2);
         }
+        public int value { get; set; }
+        //virtual property list says it can be overridden by a child class such as odds  
+        public override List<int> IntegerList { get; set; }
         //methods we need to have available for testing
         public int Modulo(int divisor)
         {
@@ -22,9 +26,11 @@ namespace Mathmagician
         {
             Even numE = new Even()
             {
-            };
+
+            }
         }
-        public int value { get; set; }
+       
+        
     }
 }
   
