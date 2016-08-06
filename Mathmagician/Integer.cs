@@ -8,62 +8,32 @@ namespace Mathmagician
 {
     public class Integer
     {
+        private int answerSO;
+
         public Integer()
-        {
-        }
-        public Integer(string userInput)
         //this is a constructor
         {
-             //int.TryParse returns a boolean
-            if (int.TryParse(userInput, out i))
-            //giving the method of TryPars a  reference to i outside of its scope
-            {
-                if (i > 0)
-                { //initialize integer object here    
-                }
-                else
-                {
-                    throw new Exception("Sorry, that won't work for this!");
-                }
-            }
-            else
-            {
-                //you didn't give me an integer
-                throw new ArgumentException("Sorry, that won't work!");
-            }
-        
+            IntegerList = new List<int>();
         }
-        int i;
-        //operations here, add, subtract, multiply, modulo
-        public int Multiply(int firstNumber, int secondNumber)
+        //virtual property list says it can be overridden by a child class such as odds  
+        public virtual List<int> IntegerList { get; set; }
+        //listLength is the variable we are getting from the user
+        public virtual List<int> GenerateList(int listLength)
         {
-            var answerMulty = firstNumber * secondNumber;
-            return answerMulty;
-
-            // private List<int> answer = new List<int>();
-
-        }
-        public int AddTwo(int firstNumber)
-        {
-            var answerAddTwo = firstNumber + 2;
-            return answerAddTwo;
-
-            // private List<int> answer = new List<int>();
+            for (var i = 0; i < listLength; i++)
+            {
+                IntegerList.Add(i);
+            }
+            return IntegerList;
         }
         public int SubtractOne(int x)
         {
-            var answerSO = (x - 1);
-            return answerSO; 
+            return answerSO;
         }
         public int ModuloTwo(int y)
         {
             var answerModTwo = (y % 2);
             return answerModTwo;
-        }
-        public void ListIntegers()
-        {
-            //create a list with nothing in it
-            List<int> ListIntegers = new List<int> { 0 };
         }
     }
 }

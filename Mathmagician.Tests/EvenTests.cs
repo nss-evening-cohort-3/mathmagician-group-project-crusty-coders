@@ -24,8 +24,9 @@ namespace Mathmagician.Tests
         //Assert
 
         //instance of even must be true
-       // Assert.True
-
+        // Assert.True
+        public void (bool);
+       
 
     }
 

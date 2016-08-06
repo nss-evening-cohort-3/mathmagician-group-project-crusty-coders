@@ -1,5 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+
+
 
 namespace Mathmagician.Tests
 {
@@ -25,20 +28,8 @@ namespace Mathmagician.Tests
         {
             Assert.AreEqual( i, userInput);
         }
-        [TestMethod]
-        public void IntegerMultiplyWorks()
-        {
-            Integer Multiply = new Integer();
-            int answerMulty = Multiply.Multiply(6, 7);
-            Assert.AreEqual( (42), answerMulty );
-        }
-        [TestMethod]
-        public void IntegerAddTwo()
-        {
-            Integer AddTwo = new Integer();
-            int answerAddTwo = AddTwo.AddTwo(3);
-            Assert.AreEqual((5), answerAddTwo );
-        }
+       
+       
         [TestMethod]
         public void IntegerSubtractOne()
         {
@@ -52,6 +43,14 @@ namespace Mathmagician.Tests
             Integer ModuloTwo = new Integer();
             int answerModTwo = ModuloTwo.ModuloTwo(10);
             Assert.AreEqual((0), answerModTwo);
+        }
+        //create a test checking to make sure we can create a list starting at zero
+        [TestMethod]
+        public void TestGeneratingList()
+        {
+            Integer TestList = new Integer();
+            List<int> List1 = new List<int>() {1, 2, 3, 4};
+            CollectionAssert.AreEqual(List1, IntegerList{4});       
         }
     }
 }

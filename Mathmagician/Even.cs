@@ -8,6 +8,11 @@ namespace Mathmagician
 {
     public class Even : Integer
     {
+        public Even() : base()
+        {
+            //we want to create a collection of Even Integers
+            IntegerList.Add(2);
+        }
         //methods we need to have available for testing
         public int Modulo(int divisor)
         {
