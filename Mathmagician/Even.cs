@@ -27,7 +27,7 @@ namespace Mathmagician
             Even numE = new Even()
             {
 
-            }
+            };
         }
        
         

@@ -22,13 +22,7 @@ namespace Mathmagician.Tests
             //Assert
             Assert.IsTrue(true);
         }
-        [TestMethod]
-        public void ThisTestShouldFail()
-        {
-            //Arrange
-            //Act
-            //Assert
-            Assert.Fail();
-        }
+        
+       
     }
 }

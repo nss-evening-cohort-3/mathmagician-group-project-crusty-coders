@@ -25,10 +25,10 @@ namespace Mathmagician.Tests
 
         //instance of even must be true
         // Assert.True
-        public void IsEven(bool)
-        {
-            if 
-        }
+       // public void IsEven(bool)
+       // {
+       //     if 
+       // }
        
 
     }
