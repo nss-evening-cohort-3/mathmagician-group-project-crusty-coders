@@ -22,7 +22,7 @@ namespace Mathmagician
         {
             for (var i = 0; i < listLength; i++)
             {
-                IntegerList.Add(i);
+                IntegerList.Add(i+1);
             }
             return IntegerList;
         }
