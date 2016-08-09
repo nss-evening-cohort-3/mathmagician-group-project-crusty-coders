@@ -75,15 +75,5 @@ namespace Mathmagician.Tests
             List<int> expectedList = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
             CollectionAssert.AreEqual(expectedList, result);
         }
-        // //ck to see if nothing is null in list  
-
-        // //test the list 
-        //[TestMethod]
-        //public void IntegerListIsAList()
-        //{
-        //Integer TestList2 = new Integer();
-        //List<int> List2 = new List<int>()
-        //Assert.Equal(TestList2, typeof(List<int>()));
-
     }
 }
