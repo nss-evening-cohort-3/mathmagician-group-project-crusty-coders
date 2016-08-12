@@ -34,13 +34,13 @@ namespace Mathmagician.Tests
         //    int answerSO = SubtractOne.SubtractOne(5);
         //    Assert.AreEqual((4), answerSO);
         //}
-        [TestMethod]
-        public void IntegerModuloTwo()
-        {
-            Integer ModuloTwo = new Integer();
-            int answerModTwo = ModuloTwo.ModuloTwo(10);
-            Assert.AreEqual((0), answerModTwo);
-        }
+        //[TestMethod]
+        //public void IntegerModuloTwo()
+        //{
+        //    Integer ModuloTwo = new Integer();
+        //    int answerModTwo = ModuloTwo.ModuloTwo(10);
+        //    Assert.AreEqual((0), answerModTwo);
+        //}
         //create a test checking to make sure we can create a list starting at zero
         [TestMethod]
         public void TestGeneratingList()

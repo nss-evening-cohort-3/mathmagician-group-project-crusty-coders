@@ -8,7 +8,7 @@ namespace Mathmagician
 {
     public class Integer
     {
-        private int answerSO;
+        //private int answerSO;
 
         public Integer()
         //this is a constructor
@@ -26,14 +26,12 @@ namespace Mathmagician
             }
             return IntegerList;
         }
-        public int SubtractOne(int x)
+        public void ShowNumberListInConsole(List<int> integers)
         {
-            return answerSO;
-        }
-        public int ModuloTwo(int y)
-        {
-            var answerModTwo = (y % 2);
-            return answerModTwo;
+            foreach (var integer in integers)
+            {
+                Console.WriteLine(integer);
+            }
         }
     }
 }
