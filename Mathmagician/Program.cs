@@ -38,39 +38,30 @@ namespace Mathmagician
                     List<int> intList = myInteger.GenerateList(listLength);
                     //this is calling the method in the Integer.cs class to print the intList to screen
                     myInteger.ShowNumberListInConsole(intList);
-
                 }
                 else if (user_numberType == "even")
                 {
-
-                    //Integer myEven = new Integer();
-                    //List<int> intList = myEven.GenerateList(listLength);
-                    //myEven.ShowNumberListInConsole(intList);
-                    Console.WriteLine("You picked evens!");
+                    Integer myEven = new Even();
+                    List<int> EvenList = myEven.GenerateList(listLength);
+                    myEven.ShowNumberListInConsole(EvenList);
                 }
                 else if (user_numberType == "odd")
                 {
-
-                    //Integer myEven = new Integer();
-                    //List<int> intList = myEven.GenerateList(listLength);
-                    //myEven.ShowNumberListInConsole(intList);
-                    Console.WriteLine("You picked odds!");
+                    Integer myOdd = new Odd();
+                    List<int> OddList = myOdd.GenerateList(listLength);
+                    myOdd.ShowNumberListInConsole(OddList);
                 }
                 else if (user_numberType == "prime")
                 {
-
-                    //Integer myEven = new Integer();
-                    //List<int> intList = myEven.GenerateList(listLength);
-                    //myEven.ShowNumberListInConsole(intList);
-                    Console.WriteLine("You picked primes!");
+                    Integer myPrime = new Prime();
+                    List<int> PrimeList = myPrime.GenerateList(listLength);
+                    myPrime.ShowNumberListInConsole(PrimeList);
                 }
                 else if (user_numberType == "fibonacci")
                 {
-
-                    //Integer myEven = new Integer();
-                    //List<int> intList = myEven.GenerateList(listLength);
-                    //myEven.ShowNumberListInConsole(intList);
-                    Console.WriteLine("You picked fibonaccis!");
+                    Integer myFib = new Fibonacci();
+                    List<int> FibList = myFib.GenerateList(listLength);
+                    myFib.ShowNumberListInConsole(FibList);
                 }
             }
             else

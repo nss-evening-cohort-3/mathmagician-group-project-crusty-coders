@@ -8,15 +8,15 @@ namespace Mathmagician
 {
     public class Integer
     {
-        //private int answerSO;
 
         public Integer()
         //this is a constructor
         {
             IntegerList = new List<int>();
         }
-        //virtual property list says it can be overridden by a child class such as odds  
+        //virtual property list says it can be overridden by a child class 
         public virtual List<int> IntegerList { get; set; }
+        
         //listLength is the variable we are getting from the user
         public virtual List<int> GenerateList(int listLength)
         {

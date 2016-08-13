@@ -15,7 +15,6 @@ namespace Mathmagician.Tests
         public void IntegerEnsureICanCreateAnInstance()//of a class
         {
             //Arrange
-
             //Act - we're writing code that doesn't exist yet
             Integer my_int = new Integer(); //what I want to be ABLE to do
             //Assert
@@ -26,22 +25,6 @@ namespace Mathmagician.Tests
         {
             Assert.AreEqual(i, userInput);
         }
-
-        //[TestMethod]
-        //public void IntegerSubtractOne()
-        //{
-        //    Integer SubtractOne = new Integer();
-        //    int answerSO = SubtractOne.SubtractOne(5);
-        //    Assert.AreEqual((4), answerSO);
-        //}
-        //[TestMethod]
-        //public void IntegerModuloTwo()
-        //{
-        //    Integer ModuloTwo = new Integer();
-        //    int answerModTwo = ModuloTwo.ModuloTwo(10);
-        //    Assert.AreEqual((0), answerModTwo);
-        //}
-        //create a test checking to make sure we can create a list starting at zero
         [TestMethod]
         public void TestGeneratingList()
        {    

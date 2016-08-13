@@ -14,7 +14,6 @@ namespace Mathmagician
             this.EvenList = new List<int>();
         }
 
-        //virtual property list says it can be overridden by a child class such as odds  
         public override List<int> IntegerList { get; set; }
         public List<int> EvenList { get; private set; }
 
@@ -40,7 +39,6 @@ namespace Mathmagician
         {
             Even numE = new Even()
             {
-
             };
         }  
     }

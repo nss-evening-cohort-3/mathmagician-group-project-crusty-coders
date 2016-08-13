@@ -20,7 +20,7 @@ namespace Mathmagician.Tests
         //Act
         //create a test checking to make sure we can create a list starting at zero
         [TestMethod]
-        public void TestEvenGeneratingList()
+        public void TestOddGeneratingList()
         {
             //Arrange
             Odd TestOddList1 = new Odd();

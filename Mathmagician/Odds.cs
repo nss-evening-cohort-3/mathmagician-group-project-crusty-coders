@@ -12,14 +12,13 @@ namespace Mathmagician
         {
             this.OddList = new List<int>();
         }
-
-        //virtual property list says it can be overridden by a child class such as odds  
+        //overriding the IntegerList 
+        //also inherits invisible method like ShowNumberListInConsole
         public override List<int> IntegerList { get; set; }
         public List<int> OddList { get; private set; }
 
         public override List<int> GenerateList(int listLength)
         {
-
             for (var i = 0; OddList.Count != listLength; i++)
             {
                 if (i % 2 != 0)
