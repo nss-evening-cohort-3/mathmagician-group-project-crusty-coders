@@ -11,11 +11,13 @@ namespace Mathmagician
         //This allows us to create a new instance of Fibonacci in any file except this one.
         public Fibonacci() : base()
         {
+            this.FibList = new List<int>();
         }
-
-        public List<int> GenerateFibonacciList(int listLength)
+        //virtual property list says it can be overridden by a child class   
+        public override List<int> IntegerList { get; set; }
+        public List<int> FibList { get; private set; }
+        public override List<int> GenerateList(int listLength)
         {
-            if (listLength > 1)
             {
                 List<int> FibList = new List<int>() { 1, 1 };
 
@@ -28,10 +30,8 @@ namespace Mathmagician
                 }
                 return FibList;
             }
-            else
-            {
-                return new List<int>() { 1 };
-            }
         }
     }
 }
+
+   
