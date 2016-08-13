@@ -13,14 +13,15 @@ namespace Mathmagician.Tests
             Fibonacci myFib = new Fibonacci();
             Assert.IsNotNull(myFib);
         }
-
         [TestMethod]
         public void TestFibGenList()
         {
             //Arrange
             Fibonacci TestFibList1 = new Fibonacci();
             //Act
+
             List<int> result = TestFibList1.GenerateList(2);
+
             //Assert
             List<int> expectedList = new List<int>() { 1, 1 };
             CollectionAssert.AreEqual(expectedList, result);
@@ -44,8 +45,9 @@ namespace Mathmagician.Tests
             //Act
             List<int> result = TestFibList3.GenerateList(10);
             //Assert
-            List<int> expectedList = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 };
+            List<int> expectedList = new List<int>() { 1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
             CollectionAssert.AreEqual(expectedList, result);
         }
     }
 }
+

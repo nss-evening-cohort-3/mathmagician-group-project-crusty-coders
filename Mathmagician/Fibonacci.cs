@@ -18,7 +18,6 @@ namespace Mathmagician
         public List<int> FibList { get; private set; }
         public override List<int> GenerateList(int listLength)
         {
-            //if (listLength > 1)
             {
                 List<int> FibList = new List<int>() { 1, 1 };
 
